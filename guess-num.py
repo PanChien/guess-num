@@ -1,7 +1,11 @@
 # 猜數字 random
 import random
+start = input('請決定隨機數字範圍開始值：')
+end = input('請決定隨機數字範圍結整值：')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0  # 變數寫在while的外面，在重複迴圈時才不會一直歸零
 while True:
     count = count + 1  # 也可以寫成 count += 1
